@@ -1,0 +1,74 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+}
+.main-container{
+    background: #000;
+    margin: 10px;
+    padding: 35px;
+    border-radius: 15px;
+}
+h1{
+    color: white;
+}
+.he{
+    /* background-color: black; */
+}
+.calc-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:  minmax(120px, auto) repeat(,100px);
+    gap: 15px;
+    /* grid-column: 2; */
+}
+.output{
+    background-color: white;
+    grid-column: 1/-1;
+    /* grid-row: 1/2; */
+height: 75px;
+text-align: end;
+display: flex;
+align-items: flex-end;
+justify-content: space-around;
+flex-direction: column;
+padding: 5px;
+word-wrap: break-word;
+word-break: break-all;
+
+ }
+ .output  .prev-op{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+ }
+ .output .curr-op{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+ }
+
+ button{
+    padding: 5px;
+    font-size: x-large;
+    font-weight: 700;
+    border-radius: 10px;
+ }
+ .row-two{
+    grid-row: 5/7;
+    grid-column: 4;
+ }
+ .span-two{
+    grid-row: 6;
+    grid-column: 1/3;
+ }
